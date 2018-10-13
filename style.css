@@ -1,0 +1,142 @@
+body {
+  font-family: "Helvetica";
+}
+
+.rdcLabel {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  font-size: 12pt;
+  line-height: 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+}
+
+.rdcLabelUnselected {
+  background-color: rgb(240, 240, 240);
+  color: darkgray;
+}
+
+.rdcLabelSelected {
+  background-color: #5cdb94;
+  color: white;
+}
+
+.rdcLabelUnselected:hover {
+  animation-name: labelHover;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  transform: scale(1.1);
+}
+
+.rdcLabelSelected:hover {
+  transform: scale(1.1);
+}
+
+.rdcContainer {
+  margin-top: 5px;
+  width: max-content;
+  border-radius: 5px;
+
+  position: absolute;
+  top: auto;
+  left: auto;
+
+  animation-name: tableShowUp;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+
+  overflow: hidden;
+
+  box-shadow: 2px 4px 50px #888888;
+}
+
+.rdcHide {
+  display: none;
+}
+
+.rdcShow {
+  display: block;
+}
+
+.rdcTable {
+  border-collapse: collapse;
+}
+
+.rdcHeader {
+  width: 50px;
+  height: 50px;
+  font-weight: normal;
+  font-size: 10pt;
+  user-select: none;
+  color: white;
+}
+
+td.rdcBody {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  user-select: none;
+  border-radius: 50px;
+}
+
+td.rdcBodyCurrent {
+  cursor: pointer;
+}
+
+td.rdcBodyCurrent:hover {
+  animation-name: hoverSelected;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+td.rdcNoneCurrent {
+  color: lightgray;
+  cursor: default;
+}
+
+.rdcPicker {
+  background-color: #448aff;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  font-size: 15pt;
+}
+
+.arrow:hover {
+  color: darkgray;
+}
+
+@keyframes labelHover {
+  from {
+    background-color: rgb(240, 240, 240);
+    color: darkgray;
+  }
+  to {
+    background-color: grey;
+    color: white;
+  }
+}
+
+@keyframes tableShowUp {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 430px;
+  }
+}
+
+@keyframes hoverSelected {
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    background-color: #5cdb94;
+    color: white;
+  }
+}
