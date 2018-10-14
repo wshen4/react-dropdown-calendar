@@ -1,24 +1,20 @@
 {
   "name": "react-dropdown-calendar",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simply beautiful dropdown date picker for React.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wshen4"
+    "url": "git+https://github.com/wshen4/react-dropdown-calendar.git"
   },
-  "keywords": [
-    "calendar",
-    "input",
-    "react",
-    "reactjs",
-    "dropdown",
-    "frontend",
-    "webapp"
-  ],
-  "author": "Weiyu Shen",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wshen4/react-dropdown-calendar/issues"
+  },
+  "homepage": "https://github.com/wshen4/react-dropdown-calendar#readme"
 }
