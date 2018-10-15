@@ -1,4 +1,6 @@
+# .npmignore 
 src
-demo
+examples
 .babelrc
+.gitignore
 webpack.config.js
